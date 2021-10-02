@@ -6,18 +6,19 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-export default function MediaCard() {
+export default function MediaCard({ recipe }) {
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         component="img"
         height="140"
-        src="https://a0.muscache.com/im/pictures/eb9c7c6a-ee33-414a-b1ba-14e8860d59b3.jpg?im_w=720"
+        
+        src={recipe["recipe"]["image"]}
         alt="img"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Lizard
+        <p>{recipe["recipe"]["label"]}</p>
         </Typography>
         <Typography variant="body2" color="text.secondary">
           Lizards are a widespread group of squamate reptiles, with over 6,000
