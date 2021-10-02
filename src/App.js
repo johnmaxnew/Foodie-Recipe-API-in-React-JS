@@ -38,12 +38,9 @@ function App() {
       <div className="main">
         <header className="App-header">
           <h3  className="header_title">Foodie Recipes</h3>
-          <Button type="submit" variant="contained" onClick={getRecipes}>Search</Button>
-
           <form className="search" onSubmit={onSubmit}>
             <input type="text" className="search-input" placeholder="Search recipes..." 
             value={query} onChange={(e) => setquery(e.target.value)}/>
-            {/* <input type="submit" value="search"/> */}
             <Button type="submit" variant="contained">Search</Button>
           </form>
 
@@ -61,7 +58,6 @@ function App() {
             <Box sx={{ flexGrow: 1 }}>
               <Grid container spacing={2}>
                   <Grid item xs={12} sm={6} md={4}>
-                      {/* <Card/> */}
                       {recipes.map(recipe => {
                         return  <Card recipe={ recipe } />;
                       })}
