@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 import './App.css';
 import './key'
@@ -30,15 +30,23 @@ function App() {
     setrecipes(result.data.hits)
     console.log(result.data);
   }
+  const onSubmit = (e) => {
+    e.preventDefault();
+    getRecipes();
+  }
+
+
   return (
     <div className="App">
 
       <div className="main">
         <header className="App-header">
           <h3  className="header_title">Foodie Recipes</h3>
-          <form className="search" action="" method="GET">
-            <input type="text" className="search-input" placeholder="Search recipes..." name="title__icontains" id="id_title__icontains" value={query} onChange={(e) => setquery(e.target.value)}/>
-            <Button type="submit" variant="contained" onClick={getRecipes}>Search</Button>
+          <Button type="submit" variant="contained" onClick={getRecipes}>Search</Button>
+
+          <form className="search" onSubmit={onSubmit}>
+            <input type="text" className="search-input" placeholder="Search recipes..." value={query} onChange={(e) => setquery(e.target.value)}/>
+            <Button type="submit" variant="contained">Search</Button>
           </form>
 
 
