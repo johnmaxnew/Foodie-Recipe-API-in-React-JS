@@ -8,7 +8,7 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Container from '@material-ui/core/Container';
 import Card from './components/Card'
-import Tile from './components/Tile'
+// import Tile from './components/Tile'
 
 
 function App() {
@@ -45,16 +45,11 @@ function App() {
           </form>
 
 
-          <div>
-              {/* here */}
-              <div class="row">
-                  {recipes.map(recipe => {
-                    return  <Tile recipe={ recipe } />;
-                  })}
-              </div>
-              {/* here */}
-          </div>
-
+          {/* <div>
+            {recipes.map(recipe => {
+              return  <Tile recipe={ recipe } />;
+            })}
+          </div> */}
 
         </header>
         <div className="content">
