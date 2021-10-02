@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --font1: 'Heebo', sans-serif;
+    --font2: 'Fira Sans Extra Condensed', sans-serif;
+    --font3: 'Roboto', sans-serif
+}
+
+body {
+    font-family: var(--font3);
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%)
+}
+.navbar-brand{
+    font-weight: bold;
+    font-size: 30px;
+    color: blue !important;
+}
+.navbar-brand span{
+    font-weight: 400;
+    color: #212529 !important;
+}
+
+.buttons {
+    display: flex;
+    margin-top: 15px
+}
+
+.buttons button:nth-child(1) {
+    width: 100%;
+    height: 40px;
+    margin-right: 10px;
+    border: none;
+    background-color: #fff;
+    border: 2px solid blue;
+    border-radius: 4px;
+    color: blue;
+    cursor: pointer;
+    transition: all 0.5s
+}
+
+.buttons button:hover:nth-child(1) {
+    background-color: blue;
+    color: #fff
+}
+
+.buttons button:nth-child(2) {
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: blue;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer
+}
+
+.navbar{
+    background: #fff !important;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+
+footer {
+    background: #212529;
+    color: #fff;
+    margin-bottom: none;
+}
+footer ul li a{
+    text-decoration: none;
+}
+
+.socials{
+    font-size: 40px;
+}
+.socials i{
+    color: #c6c6c6;
+}
+.socials i:hover{
+    color: #fff;
+}
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+
+.c-details span {
+    font-weight: 300;
+    font-size: 13px
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    background-color: #eee;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 39px
+}
+
+.badge span {
+    background-color: #4a4f6f;
+    width: 60px;
+    height: 25px;
+    padding-bottom: 3px;
+    border-radius: 5px;
+    display: flex;
+    color: #fed85d;
+    justify-content: center;
+    align-items: center
+}
+
+.progress {
+    height: 10px;
+    border-radius: 10px
+}
+
+.progress div {
+    background-color: red
+}
+
+.text1 {
+    font-size: 14px;
+    font-weight: 600
+}
+
+.text2 {
+    color: #a5aec0
+}
