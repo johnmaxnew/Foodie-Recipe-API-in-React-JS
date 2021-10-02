@@ -3,29 +3,60 @@
 }
 
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (maxWidth) {
+  .header_title, search {
+    width: 100%;
   }
 }
 
-.App-header {
+.main{
   background-color: #dbe7ff;
   min-height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   font-size: calc(10px + 2vmin);
-  color: rgb(41, 45, 97);
+  color: rgb(41, 45, 97)
+}
+.content{
+  width: 80%;
+  margin-top: 30px;
+}
+.App-header {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+.header_title{
+  margin-right: 30px;
 }
 
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* SEARCH */
+.search{
+  background: #fff;
+  padding: 2px;
+  border-radius: 8px;
+  display: flex; 
+  border: 1px solid grey !important;
 }
+.search-input{
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0 20px;
+  font-size: 18px;
+}
+.search-btn{
+  background: var(--text-light-2);
+  color: #fff;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+/* SEARCH END */
+
