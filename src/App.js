@@ -57,11 +57,11 @@ function App() {
           <Container maxWidth={false}>
             <Box sx={{ flexGrow: 1 }}>
               <Grid container spacing={2}>
+                  {recipes.map(recipe => {
                   <Grid item xs={12} sm={6} md={4}>
-                      {recipes.map(recipe => {
                         return  <Card recipe={ recipe } />;
-                      })}
                   </Grid>
+                   })}
               </Grid>
             </Box>
           </Container>
