@@ -20,11 +20,14 @@ const Item = styled(Paper)(({ theme }) => ({
 
 function App() {
   const [query, setquery] = useState("")
+  const [recipes, setrecipes] = useState([])
+
   // var url = `https://api.edamam.com/search?q=chicken&app_id=${YOUR_APP_ID}&app_key=${YOUR_APP_KEY}&from=0&to=3&calories=591-722&health=alcohol-free`
   var url = `https://api.edamam.com/search?q=${query}&app_id=bb998e7e&app_key=17e9fb108d9e4c5522d35e32034aa9ee&from=0&to=3&calories=591-722&health=alcohol-free`
 
   async function getRecipes(){
     var result = await axios.get(url);
+    setrecipes(result.data.hits)
     console.log(result.data);
   }
   return (
@@ -37,6 +40,16 @@ function App() {
             <input type="text" className="search-input" placeholder="Search recipes..." name="title__icontains" id="id_title__icontains" value={query} onChange={(e) => setquery(e.target.value)}/>
             <Button type="submit" variant="contained" onClick={getRecipes}>Search</Button>
           </form>
+
+
+          <div>
+            {recipes.map(recipe => {
+              return <p>{recipe['recipe']}</p>
+            })}
+          </div>
+
+
+
         </header>
         <div className="content">
 
