@@ -55,13 +55,13 @@ function App() {
 
           <Container maxWidth={false}>
             <Box sx={{ flexGrow: 1 }}>
-              <GridList  container spacing={2}>
+              <Grid  container spacing={2}>
                   <Grid item xs={12} sm={6} md={4}>
                       {recipes.map(recipe => {
                         return  <Card recipe={ recipe } />;
                       })}
                   </Grid>
-              </GridList>
+              </Grid>
             </Box>
           </Container>
 
