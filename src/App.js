@@ -69,10 +69,10 @@ function App() {
 
 
             <ImageList sx={{ width: 500, height: 450 }}>
-              {itemData.map((item) => (
-                <ImageListItem key={item.img}>
+            {recipes.map(recipe => {
+                <ImageListItem key={recipes.recipe}>
 
-
+                  
                   {/* <img
                     src={`${item.img}?w=248&fit=crop&auto=format`}
                     srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
@@ -85,14 +85,9 @@ function App() {
                     position="below"
                   /> */}
 
-                      {recipes.map(recipe => {
-                        return  <Card recipe={ recipe } />;
-                      })}
-
-
-
+                  return  <Card recipe={ recipe } />;
                 </ImageListItem>
-              ))}
+              })}
             </ImageList>
 
 
