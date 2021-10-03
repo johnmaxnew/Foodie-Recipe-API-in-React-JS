@@ -43,22 +43,15 @@ function App() {
             <Button type="submit" variant="contained">Search</Button>
           </form>
 
-
-          {/* <div>
-            {recipes.map(recipe => {
-              return  <Tile recipe={ recipe } />;
-            })}
-          </div> */}
-
         </header>
         <div className="content">
 
           <Container maxWidth={false}>
-            <Box sx={{ flexGrow: 1 }}>
-              <Grid  container spacing={2}>
-                  <Grid item xs={12} sm={6} md={4}>
+            <Box >
+              <Grid  className="gridd" container spacing={2}>
+                  <Grid className="gridd" item xs={12} sm={6} md={4}>
                       {recipes.map(recipe => {
-                        return  <Card recipe={ recipe } />;
+                        return  <Card item xs={12} sm={6} md={4} recipe={ recipe } />;
                       })}
                   </Grid>
               </Grid>
