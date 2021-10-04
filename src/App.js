@@ -33,7 +33,6 @@ function App() {
       <div className="main">
         <header className="app-header mb-2">
           <h1  className="header_title">FoodPass</h1>
-          <h5  className="desc">Search Recipes</h5>
           <form className="search mt-3" onSubmit={onSubmit}>
             <input type="text" className="search-input" placeholder="Search recipes..." 
             value={query} onChange={(e) => setquery(e.target.value)}/>
