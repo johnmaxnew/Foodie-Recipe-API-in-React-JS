@@ -6,14 +6,16 @@ import Card from './components/Card'
 
 
 function App() {
-  const YOUR_APP_ID = "bb998e7e"; 
-  const YOUR_APP_KEY = "17e9fb108d9e4c5522d35e32034aa9ee";
+
+  const YOUR_APP_ID = process.env.YOUR_APP_ID;
+  const YOUR_APP_KEY = process.env.YOUR_APP_KEY;
 
   const [query, setquery] = useState("")
   const [recipes, setrecipes] = useState([])
+  const [choice, setchoice] = useState("gluten-free")
 
   var url = `https://api.edamam.com/search?q=${query}&
-  app_id=${YOUR_APP_ID}&app_key=${YOUR_APP_KEY}&&calories=591-722&health=alcohol-free`
+  app_id=${YOUR_APP_ID}&app_key=${YOUR_APP_KEY}&&calories=591-722&health=${choice}`
 
   async function getRecipes(){
     var result = await axios.get(url);
@@ -29,12 +31,29 @@ function App() {
     <div className="App">
 
       <div className="main">
-        <header className="App-header">
-          <h3  className="header_title">Foodie Recipes</h3>
-          <form className="search" onSubmit={onSubmit}>
+        <header className="app-header mb-2">
+          <h1  className="header_title">Foodie Recipes</h1>
+          <form className="search mt-3" onSubmit={onSubmit}>
             <input type="text" className="search-input" placeholder="Search recipes..." 
             value={query} onChange={(e) => setquery(e.target.value)}/>
             <Button type="submit" variant="contained">Search</Button>
+            <select name="" id="" className="choice">
+              <option value="gluten-free" onClick={() => setchoice("gluten-free")}>gluten-free</option> 
+              <option value="vegan" onClick={() => setchoice("vegan")}>vegan</option> 
+              <option value="vegetarian" onClick={() => setchoice("vegetarian")}>vegetarian</option> 
+              <option value="paleo" onClick={() => setchoice("paleo")}>paleo</option> 
+              <option value="dairy-free" onClick={() => setchoice("dairy-free")}>dairy-free</option> 
+              <option value="wheat-free" onClick={() => setchoice("wheat-free")}>wheat-free</option> 
+              <option value="fat-free" onClick={() => setchoice("fat-free")}>fat-free</option> 
+              <option value="low-sugar" onClick={() => setchoice("low-sugar")}>low-sugar</option> 
+              <option value="egg-free" onClick={() => setchoice("egg-free")}>egg-free</option> 
+              <option value="peanut-free" onClick={() => setchoice("peanut-free")}>peanut-free</option> 
+              <option value="tree-nut-free" onClick={() => setchoice("tree-nut-free")}>tree-nut-free</option> 
+              <option value="soy-free" onClick={() => setchoice("soy-free")}>soy-free</option> 
+              <option value="fish-free" onClick={() => setchoice("fish-free")}>fish-free</option> 
+              <option value="shellfish-free" onClick={() => setchoice("shellfish-free")}>shellfish-free</option> 
+
+            </select>
           </form>
 
         </header>
