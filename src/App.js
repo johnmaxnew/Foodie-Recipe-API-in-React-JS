@@ -58,6 +58,90 @@ function App() {
             </Box>
           </Container>
 
+
+
+
+
+          <div class="row pb-5 mb-4">
+
+
+
+        
+<div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+
+    <div class="card rounded shadow-sm border-0">
+        <div class="card-body p-0">
+            <div class="bg-primary px-5 py-4 text-center card-img-top"><img src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-4.jpg" alt="..." width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto"/>
+                <h5 class="text-white mb-0">Emma Nevoresky</h5>
+                <p class="small text-white mb-0">Elite user</p>
+            </div>
+            <div class="px-5 py-4 text-center">
+                <h5 class="mb-0">Mark Rockwell</h5>
+                <p class="small text-muted">CEO - Consultant</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+
+    <div class="card rounded shadow-sm border-0">
+        <div class="card-body p-0">
+            <div class="bg-success px-5 py-4 text-center card-img-top"><img src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-2.jpg" alt="..." width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto"/>
+                <h5 class="text-white mb-0">Samuel Hardy</h5>
+                <p class="small text-white mb-0">Elite user</p>
+            </div>
+            <div class="px-5 py-4 text-center">
+                <h5 class="mb-0">Mark Rockwell</h5>
+                <p class="small text-muted">CEO - Consultant</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+
+    <div class="card rounded shadow-sm border-0">
+        <div class="card-body p-0">
+            <div class="bg-info px-5 py-4 text-center card-img-top"><img src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-7.jpg" alt="..." width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto"/>
+                <h5 class="text-white mb-0">Tom Sunderland</h5>
+                <p class="small text-white mb-0">Elite user</p>
+            </div>
+            <div class="px-5 py-4 text-center">
+                <h5 class="mb-0">Mark Rockwell</h5>
+                <p class="small text-muted">CEO - Consultant</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+
+    <div class="card rounded shadow-sm border-0">
+        <div class="card-body p-0">
+            <div class="bg-warning px-5 py-4 text-center card-img-top"><img src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-1.jpg" alt="..." width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto"/>
+                <h5 class="text-white mb-0">John Tarly</h5>
+                <p class="small text-white mb-0">Elite user</p>
+            </div>
+            <div class="px-5 py-4 text-center">
+                <h5 class="mb-0">Mark Rockwell</h5>
+                <p class="small text-muted">CEO - Consultant</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
         </div>
       </div>
     </div>
