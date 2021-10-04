@@ -16,7 +16,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
   font-size: calc(10px + 2vmin);
   color: rgb(41, 45, 97)
 }
@@ -24,18 +23,12 @@
   width: 80%;
   margin-top: 30px;
 }
-.gridd{
-  margin-top: 90px;
-  display: contents;
-  margin-right: 40px;
-  /* border-radius: 15px; */
-}
+
 .App-header {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: space-between; */
 }
 .header_title{
   margin-right: 30px;

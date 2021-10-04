@@ -1,34 +1,23 @@
-import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
+import React from 'react'
 
-export default function MediaCard({ recipe }) {
-  return (
-    <Card sx={{ maxWidth: 345 }}>
-      <CardMedia
-        component="img"
-        height="140"
-        
-        src={recipe["recipe"]["image"]}
-        alt="img"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-        <p>{recipe["recipe"]["label"]}</p>
-        </Typography>
-        {/* <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
-        </Typography> */}
-      </CardContent>
-      <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
-      </CardActions>
-    </Card>
-  );
+function Card({ recipe }) {
+    return (
+
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 mt-3">
+            <div class="card rounded shadow-sm border-0">
+                <div class="card-body p-0">
+                    <div class="bg-primary px-5 py-4 text-center card-img-top">
+                        <img src={recipe["recipe"]["image"]} alt="..." width="200" class="rounded-circle mb-2 img-thumbnail d-block mx-auto"/>
+                    </div>
+                    <div class="px-5 py-4 text-center">
+                        <h5 class="mb-0">{recipe["recipe"]["label"]}</h5>
+                        <p class="small text-muted">CEO - Consultant</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    )
 }
+
+export default Card
