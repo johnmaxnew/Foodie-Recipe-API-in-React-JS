@@ -11,7 +11,6 @@ function Card({ recipe }) {
                     </div>
                     <div class="px-5 py-4 text-center">
                         <h5 class="mb-0">{recipe["recipe"]["label"]}</h5>
-                        <p class="small text-muted">CEO - Consultant</p>
                     </div>
                 </div>
             </div>
