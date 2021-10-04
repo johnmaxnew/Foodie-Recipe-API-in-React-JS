@@ -35,9 +35,6 @@
   margin-right: 30px;
 }
 
-.desc{
-  color: #342650;
-}
 /* SEARCH */
 .search{
   background: #fff;
@@ -67,6 +64,8 @@
   margin-left: 10px;
   border-radius: 6px;
   padding: 0 10px 0 10px;
+  font-size: 18px;
+
 }
 .card{
   cursor: pointer;

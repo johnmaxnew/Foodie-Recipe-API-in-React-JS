@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
 import axios from 'axios';
-import Button from '@mui/material/Button';
 import Card from './components/Card'
 
 
@@ -33,10 +32,11 @@ function App() {
       <div className="main">
         <header className="app-header mb-2">
           <h1  className="header_title">FoodPass</h1>
-          <form className="search mt-3" onSubmit={onSubmit}>
-            <input type="text" className="search-input" placeholder="Search recipes..." 
+
+          <form class="search d-flex" onSubmit={onSubmit}>
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" 
             value={query} onChange={(e) => setquery(e.target.value)}/>
-            <Button type="submit" variant="contained">Search</Button>
+            <button class="btn btn-primary" type="submit">Search</button>
             <select name="" id="" className="choice">
               <option value="gluten-free" onClick={() => setchoice("gluten-free")}>gluten-free</option> 
               <option value="vegan" onClick={() => setchoice("vegan")}>vegan</option> 
@@ -52,19 +52,15 @@ function App() {
               <option value="soy-free" onClick={() => setchoice("soy-free")}>soy-free</option> 
               <option value="fish-free" onClick={() => setchoice("fish-free")}>fish-free</option> 
               <option value="shellfish-free" onClick={() => setchoice("shellfish-free")}>shellfish-free</option> 
-
             </select>
           </form>
-
         </header>
         <div className="content">
-
           <div className="row pb-5 mb-4 mt-3">
               {recipes.map(recipe => {
                 return  <Card item xs={12} sm={6} md={4} recipe={ recipe } />;
               })}
           </div>
-
         </div>
       </div>
     </div>
